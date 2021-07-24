@@ -1,0 +1,51 @@
+body {
+  font-family: "monospace";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(223, 240, 216);
+}
+
+.header {
+  color: white;
+  background-color: rgb(96, 33, 168);
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.take-note {
+  margin-top: 30px;
+  font-size: 30px;
+  width: 50%;
+}
+
+.note-points {
+  color: rgb(75, 29, 128);
+  font-size: 20px;
+  list-style: none;
+  padding-left: 0px;
+  width: 50%;
+}
+
+.note-points > li {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
+  width: 98%;
+  margin: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(210, 224, 205);
+}
+
+.note-delete {
+  width: 3%;
+}
