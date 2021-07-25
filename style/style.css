@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "monospace";
   margin: 0px;
   padding: 0px;
@@ -20,32 +24,59 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
+}
+
+.take-note-div {
+  width: 100%;
+  margin: 20px;
 }
 
 .take-note {
-  margin-top: 30px;
-  font-size: 30px;
-  width: 50%;
+  color: rgb(96, 33, 168);
+  padding: 10px;
+  font-size: 28px;
+  width: 100%;
 }
 
 .note-points {
   color: rgb(75, 29, 128);
   font-size: 20px;
   list-style: none;
-  padding-left: 0px;
-  width: 50%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .note-points > li {
   display: flex;
   justify-content: space-between;
   border: solid 1px black;
-  width: 98%;
-  margin: 10px 10px 10px 0px;
-  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 5px 0px;
+  padding: 10px;
+  width: 100%;
   background-color: rgb(210, 224, 205);
 }
 
 .note-delete {
-  width: 3%;
+  width: 20px;
+  height: 21px;
+}
+
+.note-points > li:hover {
+  cursor: default;
+  font-size: 25px;
+}
+
+.note-points > li:hover > .note-delete {
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+}
+
+@media only screen and (max-width: 900px) {
+  .section {
+    margin: 0px 8px 0px 0px;
+    width: 85%;
+  }
 }
